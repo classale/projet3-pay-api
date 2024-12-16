@@ -1,0 +1,16 @@
+.button-primary-light {
+	border-radius: 999999px;
+	padding: 20px;
+	background-color: var(--dark-pink);
+	color: var(--link-water-white);
+	border: none;
+	cursor: pointer;
+}
+
+.button-primary-light:hover {
+	background-color: var(--charmed-pink);
+}
+
+.button-primary-light:disabled {
+	opacity: 50%;
+}
