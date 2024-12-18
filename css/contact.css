@@ -1,0 +1,100 @@
+.contactform {
+    width: 90%;
+}
+
+.contactform label *, .contactform label {
+    text-align: left;
+}
+
+.contactform label {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact > div.formcontainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h2 {
+    opacity: 50%;
+}
+
+.logos {
+    width: 100%;
+}
+
+.contactform input[type="text"],
+.contactform input[type="email"],
+textarea {
+    width: 100%;
+    border-radius: 0;
+    padding: 0;
+    box-shadow: none;
+    text-align: left;
+    border: none;
+    outline: none;
+    resize: none;
+    align-self: flex-start;
+}
+
+.contactform label.input, .contactform label.textarea {
+    width: 100%;
+}
+
+.contactform label.input, .textarea {
+    border-bottom: 2px solid var(--san-juan-blue);
+    color: var(--san-juan-blue);
+    opacity: 50%;
+    text-align: left;
+}
+
+.contactform label.input:focus {
+    opacity: 100%;
+}
+
+label.checkbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 32px;
+}
+
+.contactform button {
+    background-color: transparent;
+    border: 1px solid var(--san-juan-blue);
+    color: var(--san-juan-blue);
+}
+
+@media screen and (min-width: 768px) {
+    .contact {
+        width: 75%;
+    }
+
+    button {
+        padding-right: 52px;
+        padding-left: 52px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .formcontainer {
+        width: 50%;
+    }
+
+    .contact {
+        flex-direction: row;
+    }
+
+    h2 {
+        text-align: left;
+    }
+}

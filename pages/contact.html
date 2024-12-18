@@ -7,22 +7,52 @@
         <link rel="stylesheet" href="../css/reset.css">
         <link rel="stylesheet" href="../css/main.css">
         <link rel="stylesheet" href="../css/pricing.css">
+		<link rel="stylesheet" href="../css/contact.css">
         <title>Document</title>
     </head>
     <body>
         <header>
+            <div class="circle contactcircle"></div>
             <nav>
                 <div class="nav">
-                    <img class="logo" src="assets/logo.svg" alt="Logo">
-                    <a href="pages/pricing.html" class="link">Pricing</a>
-                    <a href="pages/about.html" class="link">About</a>
-                    <a href="pages/contact.html" class="link">Contact</a>
+                    <img class="logo" src="../assets/logo.svg" alt="Logo">
+                    <a href="./pricing.html" class="link">Pricing</a>
+                    <a href="./about.html" class="link">About</a>
+                    <a href="./contact.html" class="link">Contact</a>
                 </div>
                 <a class="button schedule">Schedule a Demo</a>
-                <img class="hamburger" src="assets/hamburger-menu.svg" alt="Burger">
+                <img class="hamburger" src="../assets/hamburger-menu.svg" alt="Burger">
             </nav>
         </header>
         <main>
+            <section class="contact">
+                <div class="formcontainer">
+                    <h1>Submit a help request and we’ll get in touch shortly.</h1>
+                    <form class="contactform">
+                        <label class="input">Name<input type="text" name="name"></label>
+                        <label class="input">Email Adress<input type="email" name="email"></label>
+                        <label class="input">Company Name<input type="text" name="companyname"></label>
+                        <label class="input">Title<input type="text" name="title"></label>
+                        <label class="checkbox"><input type="checkbox" name="newsletters" id=""><p>Stay up-to-date with company announcements and updates to our API</p></label>
+                        <label class="textarea">
+                            Message
+                            <textarea name="" id=""></textarea>
+                        </label>
+                        <button type="submit" class="gray">Submit</button>
+                    </form>
+                </div>
+                <div class="logoscontainer">
+                    <h2>Join the thousands of innovators already building with us</h2>
+                    <div class="logos">
+                        <img src="../assets/enterprises/teslagray.svg" alt="tesla" />
+                        <img src="../assets/enterprises/microsoftgray.svg" alt="microsoft"/>
+                        <img src="../assets/enterprises/hpgray.svg" alt="hp" />
+                        <img src="../assets/enterprises/oraclegray.svg" alt="oracle" />
+                        <img src="../assets/enterprises/googlegray.svg" alt="google" />
+                        <img src="../assets/enterprises/nvidiagray.svg" alt="nvidia" />
+                    </div>
+                </div>
+            </section>
             <section class="demo">
                 <h2>Ready to start?</h2>
                 <form class="mail">
@@ -32,12 +62,12 @@
             </section>
         </main>
         <footer>
-            <img src="assets/payapi_footer.svg" alt="Logo" class="logo">
-            <div class="links">
-                <a href="pages/pricing.html">Pricing</a>
-                <a href="pages/about.html">About</a>
-                <a href="pages/contact.html">Contact</a>
-            </div>
+			<img src="../assets/payapi_footer.svg" alt="Logo" class="logo" />
+			<div class="links">
+				<a href="./pricing.html">Pricing</a>
+				<a href="./about.html">About</a>
+				<a href="./contact.html">Contact</a>
+			</div>
             <div class="socials">
                 <a class="nohover">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

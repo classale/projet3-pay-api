@@ -10,9 +10,31 @@
 	--light-san-juan-blue: #6c8294;
 }
 
+body {
+	overflow-x: hidden;
+}
+
+.features {
+	position: relative;
+}
+
+.features .circle {
+	right: -85vmin;
+	top: 50%;
+}
+
+h1 {
+	font-family: "DM Serif Display";
+	color: var(--san-juan-blue);
+}
+
 * {
 	font-family: "Public Sans";
 	color: var(--mirage-blue);
+}
+
+.info > p {
+	width: 100vw;
 }
 
 h2 {
@@ -83,12 +105,13 @@ ul li {
 	list-style-type: none;
 }
 
-button {
+button, .button {
 	background-color: var(--dark-pink);
 	color: var(--link-water-white);
 }
 
-.button {
+.button.gray, button.gray {
+	background-color: transparent;
 	border: 1px solid var(--san-juan-blue);
 }
 
@@ -295,7 +318,7 @@ footer > .socials {
 }
 
 footer a {
-	color: var(--link-water-white);
+	color: var(--link-water-white) ;
 	font-size: 14px;
 }
 
@@ -309,9 +332,56 @@ footer svg:hover path {
 	color: var(--dark-pink);
 }
 
+.circle {
+	width: 100vmin;
+	height: 100vmin;
+	position: absolute;
+	background-color: var(--san-juan-blue);
+	border-radius: 50vmin;
+	z-index: -1;
+	opacity: 15%;
+}
+
+header .circle.contactcircle {
+	top: 0;
+	right: 0;
+	transform: translate(30vmin, -70vmin);
+}
+
+header .circle.contactcircle {
+	top: 0;
+	right: 0;
+	transform: translate(30vmin, -70vmin);
+}
+
+header .circle {
+	top: 0;
+	right: 0;
+	transform: translate(25vmin, -40vmin);
+}
+
+.partners .circle {
+	top: 0;
+	left: 0;
+	width: 75vmin;
+	height: 75vmin;
+	z-index: -1;
+	transform: translate(-30%, -50%);
+}
+
+.partners {
+	position: relative;
+	overflow: hidden;
+	z-index: -2;
+}
+
 @media screen and (min-width: 768px) {
 	nav {
 		width: 90%;
+	}
+
+	.info > p {
+		width: auto;
 	}
 
 	.button.schedule,
